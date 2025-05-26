@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+</head>
+<body>
+    <h1>¡Cotización generada exitosamente!</h1>
+    <ul>
+        <li><strong>Número:</strong> {{ cotizacion.numero }}</li>
+        <li><strong>Nombre:</strong> {{ cotizacion.nombre }}</li>
+        <li><strong>Email:</strong> {{ cotizacion.email }}</li>
+        <li><strong>Tipo de servicio:</strong> {{ cotizacion.tipo_servicio }}</li>
+        <li><strong>Descripción:</strong> {{ cotizacion.descripcion }}</li>
+        <li><strong>Precio:</strong> S/. {{ cotizacion.precio }}</li>
+        <li><strong>Fecha:</strong> {{ cotizacion.fecha.strftime('%Y-%m-%d %H:%M:%S') }}</li>
+    </ul>
+    <a href="{{ url_for('index') }}">Volver al formulario</a>
+</body>
+</html>

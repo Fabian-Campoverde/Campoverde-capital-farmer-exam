@@ -68,6 +68,11 @@ def index():
         })
     return render_template('index.html', form=form)
 
+@app.route('/result/<int:cotizacion_id>')
+def result(cotizacion_id):
+    cotizacion = Cotizacion.query.get_or_404(cotizacion_id)
+    return render_template('result.html', cotizacion=cotizacion)
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all() # Crear la tabla en la base de datos
