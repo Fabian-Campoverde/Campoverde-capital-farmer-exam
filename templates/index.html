@@ -24,5 +24,15 @@
 
         {{ form.submit() }}
     </form>
+
+    {% if cotizacion %}
+        <hr>
+        <h2>Cotización Generada</h2>
+        <p><strong>Número:</strong> {{ cotizacion.numero }}</p>
+        <p><strong>Nombre:</strong> {{ cotizacion.nombre }}</p>
+        <p><strong>Email:</strong> {{ cotizacion.email }}</p>
+        <p><strong>Servicio:</strong> {{ cotizacion.tipo_servicio }}</p>
+        <p><strong>Precio base:</strong> S/ {{ cotizacion.precio }}</p>
+    {% endif %}
 </body>
 </html>
