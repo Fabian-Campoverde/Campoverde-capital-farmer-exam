@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cotizaciones Legales</title>
+</head>
+<body>
+    <h1>Formulario de Cotización </h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <label>{{ form.nombre.label }}</label><br>
+        {{ form.nombre() }}<br>
+
+        <label>{{ form.email.label }}</label><br>
+        {{ form.email() }}<br>
+
+        <label>{{ form.tipo_servicio.label }}</label><br>
+        {{ form.tipo_servicio() }}<br>
+
+        <label>{{ form.descripcion.label }}</label><br>
+        {{ form.descripcion() }}<br>
+
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
