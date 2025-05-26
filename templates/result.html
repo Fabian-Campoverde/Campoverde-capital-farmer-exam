@@ -16,6 +16,13 @@
         <li><strong>Precio:</strong> S/. {{ cotizacion.precio }}</li>
         <li><strong>Fecha:</strong> {{ cotizacion.fecha.strftime('%Y-%m-%d %H:%M:%S') }}</li>
     </ul>
+    <hr>
+    <h2>Análisis de Inteligencia Artificial</h2>
+    <p><strong>Complejidad:</strong> {{ ia.complejidad }}</p>
+    <p><strong>Ajuste aplicado:</strong> {{ ia.ajuste }}%</p>
+    <p><strong>Servicios adicionales:</strong> {{ ia.servicios_adicionales }}</p>
+    <h3>Propuesta Profesional</h3>
+    <p>{{ ia.propuesta | safe }}</p>
     <a href="{{ url_for('index') }}">Volver al formulario</a>
 </body>
 </html>
