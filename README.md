@@ -32,7 +32,7 @@ Una cotización con número, precio y fecha
 
 Un análisis generado por inteligencia artificial que evalúa la complejidad del caso, sugiere ajustes de precio y recomienda servicios adicionales
 
-Se mostrará una página de resultados (result.html) con toda la información, incluyendo la propuesta redactada por IA.
+Se mostrará una página de resultados (result.html) con toda la información, incluyendo la propuesta redactada por IA (Para visualizar los resultados usa http://127.0.0.1:5000/result/id -> cambiar id por el id de la cotización a visualizar)
 
 ⚙️ Funcionalidades Implementadas
 Generación automática de número de cotización
